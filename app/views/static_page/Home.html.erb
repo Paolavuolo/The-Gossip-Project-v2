@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+    <title>Acceuil</title>
+</head>
+<body>
+    <h1 class="text-center"> Mon super site de gossip !</h1>
+    <p class="text-center">Bienvenue Jeune Moussaillon &#129312;</p> <br/> 
+
+    <p class="text-center">Voici la liste des potins : </p><br/> 
+
+    	<br> <%= @gossips.each do |gossip| %>
+                <div Align=Center class="card border-dark mb-3" style="width: auto">
+                    <div class="card-header"><%= gossip.title %></div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title"><%= gossip.user.first_name %></h5>
+                      <p class="card-text">Mettre le lien de l'article </p>
+                    </div>
+                  </div>
+        <%end%>
+    </p>
+</body>
+</html>

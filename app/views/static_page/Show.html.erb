@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gossip Page</title>
+</head>
+<body>
+ 
+    <h1> Voici le Gossip n°<%=@gossip.id%></h1><br>
+    
+     <h2><strong><%= @gossip.title %></strong></h2><br>
+    <p>
+
+        <p><%= @gossip.content %> </p><br>
+        Rédigé le <%= @gossip.created_at%>
+        Par : <a href="<%=user_path(@gossip.user_id)%>"><%=User.find(@gossip.user_id).first_name%></a>
+      
+    </p>
+</body>
+</html>
