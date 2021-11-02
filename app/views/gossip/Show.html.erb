@@ -7,11 +7,15 @@
     <title>Gossip Page</title>
 </head>
 <body>
- 
-    <h1> Voici le Gossip n°<%=@gossip.id%></h1><br>
-    <p> 
-        <strong><%= @gossip.title %></strong>
-        <%= @gossip.content %> 
+
+    <br>
+    <h1 style="text-align: center;"> Voici le Gossip n°<%=@gossip.id%></h1><br>
+    <p style="text-align: center;"> 
+        <strong><%= @gossip.title %></strong><br><br>
+        <%= @gossip.content %> <br><br>
+        Rédigé le <%= @gossip.created_at%><br><br>
+        Par : <%=User.find(@gossip.user_id).first_name%> <%=User.find(@gossip.user_id).last_name%>
+        <br> la page de l'auteur : <%= link_to "Voir la page de l'auteur", user_path(User.find(@gossip.user_id))%>
     </p>
 </body>
 </html>

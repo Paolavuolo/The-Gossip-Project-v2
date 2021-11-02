@@ -10,7 +10,5 @@ class StaticPageController < ApplicationController
   def Contact
   end
 
-  def Show
-    @gossip = Gossip.find(params[:id])
-  end 
+  
 end
