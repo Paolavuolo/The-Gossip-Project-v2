@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'welcome/:user_entry', to: 'welcome#first_name'
+  get 'welcome/:id', to: 'welcome#first_name'
   get 'static_page/Home', to: 'static_page#Home'
   get 'gossip/:id', to: 'gossip#Show', as: 'gossip'
   get 'user/:id', to: 'user#Show_user', as: "user"
