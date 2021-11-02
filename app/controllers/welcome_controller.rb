@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def first_name
-    puts params[:user_entry]
+    @name = params[:name]
   end
 end
