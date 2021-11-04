@@ -13,4 +13,4 @@ Pendant cette première journée, l'objectif est de créer les pages suivantes :
    * La page de contact
    * Une page bienvenu
 
-lin vers la page : http://3000/static_page/Home
+lin vers la page : http://127.0.0.1:3000/
